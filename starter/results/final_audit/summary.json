@@ -1,0 +1,177 @@
+{
+  "assembled_at_utc": "2026-11-13T15:22:14.180566+00:00",
+  "reviewer": "ChatGPT/Codex, AI-assisted; no independent human confirmation",
+  "retrieval": {
+    "dev/A": {
+      "questions": 15,
+      "manual_hit1_count": 8,
+      "manual_hit3_count": 11,
+      "exact_hit1_count": 8,
+      "exact_hit3_count": 11
+    },
+    "dev/B": {
+      "questions": 15,
+      "manual_hit1_count": 8,
+      "manual_hit3_count": 11,
+      "exact_hit1_count": 8,
+      "exact_hit3_count": 11
+    },
+    "dev/C": {
+      "questions": 15,
+      "manual_hit1_count": 9,
+      "manual_hit3_count": 12,
+      "exact_hit1_count": 9,
+      "exact_hit3_count": 12
+    },
+    "test/A": {
+      "questions": 5,
+      "manual_hit1_count": 3,
+      "manual_hit3_count": 3,
+      "exact_hit1_count": 2,
+      "exact_hit3_count": 2
+    },
+    "test/B": {
+      "questions": 5,
+      "manual_hit1_count": 2,
+      "manual_hit3_count": 4,
+      "exact_hit1_count": 2,
+      "exact_hit3_count": 3
+    },
+    "test/C": {
+      "questions": 5,
+      "manual_hit1_count": 2,
+      "manual_hit3_count": 4,
+      "exact_hit1_count": 2,
+      "exact_hit3_count": 3
+    }
+  },
+  "latency": {
+    "dev/A": {
+      "sql_seconds_total": 0.11834030001409701,
+      "sql_seconds_mean": 0.007889353334273133,
+      "sql_seconds_median": 0.006580100001883693,
+      "query_encoding_seconds_total": 0.9855349000063143,
+      "scope": "Saved perf_counter values, not including model startup/network/downloads. Query encoding is shared once per question across A/B/C, so do not sum it across strategies."
+    },
+    "dev/B": {
+      "sql_seconds_total": 0.09690599999157712,
+      "sql_seconds_mean": 0.006460399999438474,
+      "sql_seconds_median": 0.006519299997307826,
+      "query_encoding_seconds_total": 0.9855349000063143,
+      "scope": "Saved perf_counter values, not including model startup/network/downloads. Query encoding is shared once per question across A/B/C, so do not sum it across strategies."
+    },
+    "dev/C": {
+      "sql_seconds_total": 0.09925120000480092,
+      "sql_seconds_mean": 0.006616746666986728,
+      "sql_seconds_median": 0.006576899999345187,
+      "query_encoding_seconds_total": 0.9855349000063143,
+      "scope": "Saved perf_counter values, not including model startup/network/downloads. Query encoding is shared once per question across A/B/C, so do not sum it across strategies."
+    },
+    "test/A": {
+      "sql_seconds_total": 0.08660849999796483,
+      "sql_seconds_mean": 0.017321699999592967,
+      "sql_seconds_median": 0.005593000001681503,
+      "query_encoding_seconds_total": 0.2257238000020152,
+      "scope": "Saved perf_counter values, not including model startup/network/downloads. Query encoding is shared once per question across A/B/C, so do not sum it across strategies."
+    },
+    "test/B": {
+      "sql_seconds_total": 0.03383200000462239,
+      "sql_seconds_mean": 0.006766400000924477,
+      "sql_seconds_median": 0.005956800003332319,
+      "query_encoding_seconds_total": 0.2257238000020152,
+      "scope": "Saved perf_counter values, not including model startup/network/downloads. Query encoding is shared once per question across A/B/C, so do not sum it across strategies."
+    },
+    "test/C": {
+      "sql_seconds_total": 0.028440199999749893,
+      "sql_seconds_mean": 0.0056880399999499785,
+      "sql_seconds_median": 0.004862400001002243,
+      "query_encoding_seconds_total": 0.2257238000020152,
+      "scope": "Saved perf_counter values, not including model startup/network/downloads. Query encoding is shared once per question across A/B/C, so do not sum it across strategies."
+    }
+  },
+  "coherence": {
+    "A": {
+      "sample_count": 10,
+      "mean": 1
+    },
+    "B": {
+      "sample_count": 10,
+      "mean": 1.2
+    },
+    "C": {
+      "sample_count": 10,
+      "mean": 1.2
+    }
+  },
+  "metadata": {
+    "A": {
+      "checked_records": 15,
+      "complete_and_correct": 15,
+      "filter_requested_questions": 1,
+      "observed_scope_compliant_questions": 1,
+      "enforced_filter_questions": 0
+    },
+    "B": {
+      "checked_records": 15,
+      "complete_and_correct": 15,
+      "filter_requested_questions": 1,
+      "observed_scope_compliant_questions": 1,
+      "enforced_filter_questions": 0
+    },
+    "C": {
+      "checked_records": 15,
+      "complete_and_correct": 15,
+      "filter_requested_questions": 1,
+      "observed_scope_compliant_questions": 1,
+      "enforced_filter_questions": 1
+    }
+  },
+  "grounding": {
+    "A": {
+      "questions": 5,
+      "counts": {
+        "0": 2,
+        "1": 0,
+        "2": 3
+      },
+      "mean": 1.2
+    },
+    "B": {
+      "questions": 5,
+      "counts": {
+        "0": 1,
+        "1": 0,
+        "2": 4
+      },
+      "mean": 1.6
+    },
+    "C": {
+      "questions": 5,
+      "counts": {
+        "0": 1,
+        "1": 0,
+        "2": 4
+      },
+      "mean": 1.6
+    }
+  },
+  "original_embedding_seconds": {
+    "A": 15.760164999999688,
+    "B": 18.407497800000783
+  },
+  "api_cost": {
+    "currency": "USD",
+    "embedding_and_retrieval_pipeline": 0,
+    "basis": "Pinned local SentenceTransformers on CPU + local PostgreSQL; executed code has no paid embedding/LLM API call. ChatGPT subscription, bandwidth, electricity, hardware and human effort are outside this measured API cost.",
+    "total_operating_cost": null
+  },
+  "source_files_sha256": {
+    "starter/results/dev_20261113_210325/traces.json": "8f40f84d23248074fca9bba0a6ad8c5286095089c4fcbd1378c71ad8324518b5",
+    "starter/results/dev_20261113_210325/dev_review.json": "aa1bf6292d70b54f008aee4b48926dae4c6961a9e5372c30ea600333d38f150d",
+    "starter/results/test_20261113_214547/traces.json": "b8e9aba21f13b62ef29eca3df80d5a4ebd348c1ab2ffb3fde9974ea6217892f0",
+    "starter/results/test_20261113_214547/test_review.json": "9f78ae764c1b75e455cb3785c5c5faec48bf3e662fd23f9ff7a81569a00a32b1",
+    "benchmark/questions.json": "49b27f0a0422fce8f327f01510d3ff0180a8e15c5c1f619f1aeed1553fa18281",
+    "benchmark/selection_plan.json": "369fa3acdd2b4286cc6ee585f025716b08609b7bce6513910640d0cc95e2441e",
+    "starter/results/pages_clean.json": "dc1cb648054255b554f734087fc54adafbe55e5d362a3a17a41cefbfc6e55a4c"
+  }
+}

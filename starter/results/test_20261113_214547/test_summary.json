@@ -1,0 +1,243 @@
+{
+  "split": "test",
+  "run_name": "test_20261113_214547",
+  "reviewer": "ChatGPT/Codex (AI-assisted judgment; not an independent human review)",
+  "reviewed_at_utc": "2026-11-13T14:59:34.803299+00:00",
+  "method": "Single returned chunk must contain sufficient evidence, accepting explicitly justified semantic equivalents. No combining chunks for Hit@3.",
+  "strategies": {
+    "A": {
+      "questions": 5,
+      "manual": {
+        "hit1_count": 3,
+        "hit3_count": 3,
+        "hit1_rate": 0.6,
+        "hit3_rate": 0.6
+      },
+      "exact": {
+        "hit1_count": 2,
+        "hit3_count": 2,
+        "hit1_rate": 0.4,
+        "hit3_rate": 0.4
+      }
+    },
+    "B": {
+      "questions": 5,
+      "manual": {
+        "hit1_count": 2,
+        "hit3_count": 4,
+        "hit1_rate": 0.4,
+        "hit3_rate": 0.8
+      },
+      "exact": {
+        "hit1_count": 2,
+        "hit3_count": 3,
+        "hit1_rate": 0.4,
+        "hit3_rate": 0.6
+      }
+    },
+    "C": {
+      "questions": 5,
+      "manual": {
+        "hit1_count": 2,
+        "hit3_count": 4,
+        "hit1_rate": 0.4,
+        "hit3_rate": 0.8
+      },
+      "exact": {
+        "hit1_count": 2,
+        "hit3_count": 3,
+        "hit1_rate": 0.4,
+        "hit3_rate": 0.6
+      }
+    }
+  },
+  "equivalent_evidence_overrides": [
+    {
+      "question_id": "Q19",
+      "strategy": "A",
+      "manual_hit1": 1,
+      "manual_hit3": 1,
+      "evidence_ranks": [
+        1
+      ],
+      "reason": "Chấp nhận bằng chứng tương đương ở top-1 A:vinuni_graduation:p2:s0: đoạn 2.1 giữ rõ hệ chính quy, bậc Đại học, đã hoàn thành chương trình và đủ điều kiện xét tốt ngh. Chunk cắt phần đuôi từ 'nghiệp', nhưng chính chunk đã nêu quy trình xét/cấp bằng tốt nghiệp và không mất điều kiện hay phủ định nào cần cho câu hỏi. Không ghép chunk hoặc dùng nội dung ngoài chunk để thêm điều kiện. exact_gold_match vẫn false vì không chứa nguyên văn toàn bộ quote.",
+      "hit1_exact": 0,
+      "hit3_exact": 0
+    },
+    {
+      "question_id": "Q20",
+      "strategy": "B",
+      "manual_hit1": 0,
+      "manual_hit3": 1,
+      "evidence_ranks": [
+        2
+      ],
+      "reason": "Top-1 B:vinuni_graduation:p7:c2 giữ mô tả hàng 13 nhưng cắt trước đơn vị và thời hạn của hàng này; mốc 07 ngày phía trên thuộc hàng 12 nên chưa đủ. Chấp nhận bằng chứng tương đương ở riêng hạng 2 B:vinuni_graduation:p7:c3: vẫn đọc rõ 'iấy chứng nhận tốt nghiệp tạm thời khi có nhu cầu', P.QLĐT, 07 ngày sau khi có QĐ công nhận tốt nghiệp và cấp bằng. Thiếu chữ g đầu không làm mất loại giấy; không cần ghép với hạng 1. Đã đối chiếu bố cục hàng 13 trong PDF trang 7; exact_gold_match vẫn false.",
+      "hit1_exact": 0,
+      "hit3_exact": 0
+    },
+    {
+      "question_id": "Q20",
+      "strategy": "C",
+      "manual_hit1": 0,
+      "manual_hit3": 1,
+      "evidence_ranks": [
+        2
+      ],
+      "reason": "Q20 không có filter, C cùng kết quả B. Top-1 thiếu đơn vị/thời hạn của hàng 13; thời hạn gần đó thuộc hàng 12. Riêng hạng 2 B:vinuni_graduation:p7:c3 giữ đủ loại giấy chứng nhận tốt nghiệp tạm thời (chỉ mất chữ g đầu), P.QLĐT và 07 ngày sau khi có QĐ công nhận tốt nghiệp và cấp bằng. Chấp nhận bằng chứng tương đương trong một chunk, đã đối chiếu bảng PDF trang 7; không ghép chunk. Nhãn exact giữ nguyên false.",
+      "hit1_exact": 0,
+      "hit3_exact": 0
+    }
+  ],
+  "reviews": [
+    {
+      "question_id": "Q16",
+      "strategy": "A",
+      "manual_hit1": 0,
+      "manual_hit3": 0,
+      "evidence_ranks": [],
+      "reason": "Top-1 thuộc học bổng tài năng toàn phần/100% với ngưỡng 3,2; hạng 2 là duy trì học bổng có điều kiện; hạng 3 là học bổng tài năng 50–90% với ngưỡng 2,5. Không chunk nào nêu đúng Hỗ trợ Tài chính từ 50%, điểm từ 2,0 theo hai học kỳ chính cùng tự đánh giá E.X.C.E.L và gặp cố vấn. Cùng nguồn hoặc có E.X.C.E.L không đủ xác nhận hit."
+    },
+    {
+      "question_id": "Q16",
+      "strategy": "B",
+      "manual_hit1": 0,
+      "manual_hit3": 1,
+      "evidence_ranks": [
+        3
+      ],
+      "reason": "Top-1 chỉ là tiêu đề, chưa có điều kiện. Hạng 3 B:vinuni_scholarship:p3:c4 chứa đầy đủ dòng Hỗ trợ Tài chính từ 50%: điểm từ 2,0 theo hai học kỳ chính, hoàn thành tự đánh giá E.X.C.E.L và gặp cố vấn. Một chunk riêng đủ bằng chứng."
+    },
+    {
+      "question_id": "Q16",
+      "strategy": "C",
+      "manual_hit1": 0,
+      "manual_hit3": 1,
+      "evidence_ranks": [
+        3
+      ],
+      "reason": "Không có filter cho Q16 nên C dùng cùng kết quả B. Top-1 chỉ là tiêu đề; hạng 3 B:vinuni_scholarship:p3:c4 chứa đủ đối tượng Hỗ trợ Tài chính từ 50%, điểm từ 2,0 theo hai học kỳ chính, tự đánh giá E.X.C.E.L và gặp cố vấn."
+    },
+    {
+      "question_id": "Q17",
+      "strategy": "A",
+      "manual_hit1": 0,
+      "manual_hit3": 0,
+      "evidence_ranks": [],
+      "reason": "Top-3 nói về hoàn trả học phí và đăng ký/hoãn xét tốt nghiệp. Không có quy định sinh viên chưa xác định ngành phải khai báo ngành chính chậm nhất cuối năm thứ hai. Không dùng đáp án gold để bổ sung bằng chứng cho kết quả truy xuất."
+    },
+    {
+      "question_id": "Q17",
+      "strategy": "B",
+      "manual_hit1": 0,
+      "manual_hit3": 0,
+      "evidence_ranks": [],
+      "reason": "Top-3 là phí thi lại/học lại và hạn chế dịch vụ khi nợ phí. Không có thời hạn khai báo ngành chính cuối năm thứ hai; các mốc học kỳ/năm nhập học trong chính sách phí không tương đương quy định khai báo ngành."
+    },
+    {
+      "question_id": "Q17",
+      "strategy": "C",
+      "manual_hit1": 0,
+      "manual_hit3": 0,
+      "evidence_ranks": [],
+      "reason": "Q17 không có filter nên C trả cùng top-3 với B: phí thi lại/học lại và hạn chế dịch vụ do nợ phí. Không có bằng chứng về khai báo ngành chính chậm nhất cuối năm thứ hai."
+    },
+    {
+      "question_id": "Q18",
+      "strategy": "A",
+      "manual_hit1": 1,
+      "manual_hit3": 1,
+      "evidence_ranks": [
+        1
+      ],
+      "reason": "Top-1 A:vinuni_financial:p11:s1800 giữ trọn quy tắc không hoàn trả học phí thực nộp khi thôi học sau hai tuần từ ngày đầu của khóa học/học kỳ. Có cả lưu ý xét riêng từng học kỳ. Câu hỏi giới hạn trường hợp chủ động thôi học; không nhầm với hoàn phí ký túc xá hay ngoại lệ đóng cửa trường."
+    },
+    {
+      "question_id": "Q18",
+      "strategy": "B",
+      "manual_hit1": 1,
+      "manual_hit3": 1,
+      "evidence_ranks": [
+        1
+      ],
+      "reason": "Top-1 B:vinuni_financial:p11:c6 chứa trọn quy tắc không hoàn trả học phí sau hai tuần từ ngày đầu khóa học/học kỳ, kèm lưu ý xét riêng từng học kỳ. Dù đầu chunk là đuôi câu khác, mệnh đề trả lời Q18 vẫn đầy đủ."
+    },
+    {
+      "question_id": "Q18",
+      "strategy": "C",
+      "manual_hit1": 1,
+      "manual_hit3": 1,
+      "evidence_ranks": [
+        1
+      ],
+      "reason": "Top-1 B:vinuni_financial:p11:c6 chứa đủ quy tắc không hoàn trả học phí sau hai tuần và lưu ý xét riêng từng học kỳ. Filter category=financial được cung cấp trong câu hỏi; cả ba kết quả thuộc financial. Tuân thủ filter không tự tạo hit, hit được xác nhận bằng nội dung top-1."
+    },
+    {
+      "question_id": "Q19",
+      "strategy": "A",
+      "manual_hit1": 1,
+      "manual_hit3": 1,
+      "evidence_ranks": [
+        1
+      ],
+      "reason": "Chấp nhận bằng chứng tương đương ở top-1 A:vinuni_graduation:p2:s0: đoạn 2.1 giữ rõ hệ chính quy, bậc Đại học, đã hoàn thành chương trình và đủ điều kiện xét tốt ngh. Chunk cắt phần đuôi từ 'nghiệp', nhưng chính chunk đã nêu quy trình xét/cấp bằng tốt nghiệp và không mất điều kiện hay phủ định nào cần cho câu hỏi. Không ghép chunk hoặc dùng nội dung ngoài chunk để thêm điều kiện. exact_gold_match vẫn false vì không chứa nguyên văn toàn bộ quote."
+    },
+    {
+      "question_id": "Q19",
+      "strategy": "B",
+      "manual_hit1": 1,
+      "manual_hit3": 1,
+      "evidence_ranks": [
+        1
+      ],
+      "reason": "Top-1 B:vinuni_graduation:p2:c2 giữ đầy đủ mục 2.1: sinh viên chính quy bậc Đại học đã hoàn thành chương trình đào tạo và đủ điều kiện xét tốt nghiệp. Đủ cả bậc học, hình thức và tình trạng được hỏi."
+    },
+    {
+      "question_id": "Q19",
+      "strategy": "C",
+      "manual_hit1": 1,
+      "manual_hit3": 1,
+      "evidence_ranks": [
+        1
+      ],
+      "reason": "Q19 không có filter; top-1 giống B, B:vinuni_graduation:p2:c2 chứa đủ mục 2.1 về sinh viên hệ chính quy bậc Đại học, hoàn thành chương trình và đủ điều kiện xét tốt nghiệp."
+    },
+    {
+      "question_id": "Q20",
+      "strategy": "A",
+      "manual_hit1": 1,
+      "manual_hit3": 1,
+      "evidence_ranks": [
+        1
+      ],
+      "reason": "Top-1 A:vinuni_graduation:p7:s450 chứa trọn hàng 13: cấp giấy chứng nhận tốt nghiệp tạm thời theo nhu cầu, đơn vị P.QLĐT và thời hạn 07 ngày sau khi có quyết định công nhận tốt nghiệp và cấp bằng. Không lấy nhầm mốc 07 ngày sau hoàn thiện kết quả ở hàng 12."
+    },
+    {
+      "question_id": "Q20",
+      "strategy": "B",
+      "manual_hit1": 0,
+      "manual_hit3": 1,
+      "evidence_ranks": [
+        2
+      ],
+      "reason": "Top-1 B:vinuni_graduation:p7:c2 giữ mô tả hàng 13 nhưng cắt trước đơn vị và thời hạn của hàng này; mốc 07 ngày phía trên thuộc hàng 12 nên chưa đủ. Chấp nhận bằng chứng tương đương ở riêng hạng 2 B:vinuni_graduation:p7:c3: vẫn đọc rõ 'iấy chứng nhận tốt nghiệp tạm thời khi có nhu cầu', P.QLĐT, 07 ngày sau khi có QĐ công nhận tốt nghiệp và cấp bằng. Thiếu chữ g đầu không làm mất loại giấy; không cần ghép với hạng 1. Đã đối chiếu bố cục hàng 13 trong PDF trang 7; exact_gold_match vẫn false."
+    },
+    {
+      "question_id": "Q20",
+      "strategy": "C",
+      "manual_hit1": 0,
+      "manual_hit3": 1,
+      "evidence_ranks": [
+        2
+      ],
+      "reason": "Q20 không có filter, C cùng kết quả B. Top-1 thiếu đơn vị/thời hạn của hàng 13; thời hạn gần đó thuộc hàng 12. Riêng hạng 2 B:vinuni_graduation:p7:c3 giữ đủ loại giấy chứng nhận tốt nghiệp tạm thời (chỉ mất chữ g đầu), P.QLĐT và 07 ngày sau khi có QĐ công nhận tốt nghiệp và cấp bằng. Chấp nhận bằng chứng tương đương trong một chunk, đã đối chiếu bảng PDF trang 7; không ghép chunk. Nhãn exact giữ nguyên false."
+    }
+  ],
+  "limitations": [
+    "Only five test questions per strategy; each question changes the score by 20 percentage points.",
+    "AI assisted both question preparation and judging, creating correlated errors and reviewer bias; not an independent human validation.",
+    "Not a score of generated LLM answers; coherence, metadata usefulness and grounding scores have not been filled by this operation.",
+    "Q19/A and Q20/B/C accept truncated words with all necessary meaning retained; their exact-match scores remain lower and are reported separately.",
+    "C was selected using dev in the conversation before test; no strategy, corpus, embeddings or retrieval was changed during grading."
+  ]
+}

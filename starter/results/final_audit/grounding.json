@@ -1,0 +1,206 @@
+{
+  "reviewer": "ChatGPT/Codex (AI-assisted judgment, no independent human confirmation)",
+  "reviewed_at_utc": "2026-11-13T15:10:41.111337+00:00",
+  "scale": {
+    "0": "Không có bằng chứng đúng đối tượng",
+    "1": "Có nhưng thiếu điều kiện/ngữ cảnh cần thiết",
+    "2": "Đủ để trả lời và truy nguồn"
+  },
+  "reviews": [
+    {
+      "question_id": "Q16",
+      "strategy": "A",
+      "score": 0,
+      "reason": "Không có evidence đúng đối tượng Hỗ trợ Tài chính từ 50%. Các ngưỡng 3,2/2,5 và E.X.C.E.L thuộc học bổng tài năng nên không đủ làm nền cho đáp án về hỗ trợ tài chính.",
+      "reviewed_chunk_ids": [
+        "A:vinuni_scholarship:p2:s900",
+        "A:vinuni_scholarship:p2:s1800",
+        "A:vinuni_scholarship:p3:s0"
+      ]
+    },
+    {
+      "question_id": "Q16",
+      "strategy": "B",
+      "score": 2,
+      "reason": "Hạng 3 giữ trọn đối tượng từ 50%, điểm từ 2,0 theo hai học kỳ chính, tự đánh giá E.X.C.E.L và gặp cố vấn; có source/page kiểm chứng. Hai hạng đầu không đủ nhưng top-3 có nền trả lời đầy đủ.",
+      "reviewed_chunk_ids": [
+        "B:vinuni_scholarship:p2:c4",
+        "B:vinuni_scholarship:p2:c8",
+        "B:vinuni_scholarship:p3:c4"
+      ]
+    },
+    {
+      "question_id": "Q16",
+      "strategy": "C",
+      "score": 2,
+      "reason": "Không filter; cùng top-3 với B. Hạng 3 có đủ điều kiện và nguồn/trang để trả lời; không dùng tiêu đề ở hạng 1 làm bằng chứng.",
+      "reviewed_chunk_ids": [
+        "B:vinuni_scholarship:p2:c4",
+        "B:vinuni_scholarship:p2:c8",
+        "B:vinuni_scholarship:p3:c4"
+      ]
+    },
+    {
+      "question_id": "Q17",
+      "strategy": "A",
+      "score": 0,
+      "reason": "Chỉ có hoàn trả học phí và hoãn xét tốt nghiệp; không có quy định khai báo ngành cuối năm thứ hai.",
+      "reviewed_chunk_ids": [
+        "A:vinuni_financial:p11:s1800",
+        "A:vinuni_graduation:p5:s1800",
+        "A:vinuni_financial:p11:s1350"
+      ]
+    },
+    {
+      "question_id": "Q17",
+      "strategy": "B",
+      "score": 0,
+      "reason": "Chỉ có học lại/thi lại và nợ phí; không có quy định khai báo ngành cuối năm thứ hai.",
+      "reviewed_chunk_ids": [
+        "B:vinuni_financial:p4:c8",
+        "B:vinuni_financial:p4:c7",
+        "B:vinuni_financial:p12:c9"
+      ]
+    },
+    {
+      "question_id": "Q17",
+      "strategy": "C",
+      "score": 0,
+      "reason": "Cùng B khi không filter; không có bằng chứng về thời hạn khai báo ngành.",
+      "reviewed_chunk_ids": [
+        "B:vinuni_financial:p4:c8",
+        "B:vinuni_financial:p4:c7",
+        "B:vinuni_financial:p12:c9"
+      ]
+    },
+    {
+      "question_id": "Q18",
+      "strategy": "A",
+      "score": 2,
+      "reason": "Hạng 1 giữ đủ không hoàn trả sau hai tuần và cách xét riêng từng học kỳ, có nguồn/trang; không nhầm tỷ lệ hoàn phí ký túc xá ở hạng 3.",
+      "reviewed_chunk_ids": [
+        "A:vinuni_financial:p11:s1800",
+        "A:vinuni_financial:p11:s1350",
+        "A:vinuni_financial:p5:s1350"
+      ]
+    },
+    {
+      "question_id": "Q18",
+      "strategy": "B",
+      "score": 2,
+      "reason": "Hạng 1 giữ đủ quy tắc sau hai tuần và ví dụ phân biệt hai học kỳ; hạng 2 bổ sung phạm vi chủ động thôi học. Có đủ nền trả lời và truy nguồn.",
+      "reviewed_chunk_ids": [
+        "B:vinuni_financial:p11:c6",
+        "B:vinuni_financial:p11:c5",
+        "B:vinuni_financial:p5:c4"
+      ]
+    },
+    {
+      "question_id": "Q18",
+      "strategy": "C",
+      "score": 2,
+      "reason": "Cùng bằng chứng B, giới hạn đúng financial theo input. Quy tắc sau hai tuần, phạm vi học kỳ và nguồn/trang đầy đủ.",
+      "reviewed_chunk_ids": [
+        "B:vinuni_financial:p11:c6",
+        "B:vinuni_financial:p11:c5",
+        "B:vinuni_financial:p5:c4"
+      ]
+    },
+    {
+      "question_id": "Q19",
+      "strategy": "A",
+      "score": 2,
+      "reason": "Hạng 1 giữ đủ bậc Đại học, chính quy, hoàn thành chương trình và đủ điều kiện xét tốt ngh trong ngữ cảnh quy trình tốt nghiệp. Chấp nhận đuôi từ bị cắt vì không mất điều kiện; nguồn/trang truy được. Đây là nhãn AI cận biên đã giải thích trong review test.",
+      "reviewed_chunk_ids": [
+        "A:vinuni_graduation:p2:s0",
+        "A:vinuni_graduation:p5:s900",
+        "A:vinuni_scholarship:p2:s1350"
+      ]
+    },
+    {
+      "question_id": "Q19",
+      "strategy": "B",
+      "score": 2,
+      "reason": "Hạng 1 chứa nguyên mục 2.1, đủ bậc học, hình thức và tình trạng của sinh viên, có nguồn/trang kiểm chứng.",
+      "reviewed_chunk_ids": [
+        "B:vinuni_graduation:p2:c2",
+        "B:vinuni_graduation:p5:c5",
+        "B:vinuni_graduation:p2:c1"
+      ]
+    },
+    {
+      "question_id": "Q19",
+      "strategy": "C",
+      "score": 2,
+      "reason": "Không filter; cùng B. Mục 2.1 ở hạng 1 giữ đủ phạm vi và điều kiện được hỏi.",
+      "reviewed_chunk_ids": [
+        "B:vinuni_graduation:p2:c2",
+        "B:vinuni_graduation:p5:c5",
+        "B:vinuni_graduation:p2:c1"
+      ]
+    },
+    {
+      "question_id": "Q20",
+      "strategy": "A",
+      "score": 2,
+      "reason": "Hạng 1 chứa hàng 13 với loại giấy, P.QLĐT và đúng mốc 07 ngày sau QĐ; đã phân biệt với thời gian hàng 12 khi kiểm tra bảng PDF.",
+      "reviewed_chunk_ids": [
+        "A:vinuni_graduation:p7:s450",
+        "A:vinuni_graduation:p7:s0",
+        "A:vinuni_graduation:p6:s1800"
+      ]
+    },
+    {
+      "question_id": "Q20",
+      "strategy": "B",
+      "score": 2,
+      "reason": "Hạng 2 riêng đã giữ đủ tên giấy tạm thời (thiếu chữ g đầu), P.QLĐT và 07 ngày sau QĐ. Top-3 còn có mô tả hàng 13 ở hạng 1, có source/page. Không dùng mốc 07 ngày sau hoàn thiện kết quả của hàng 12 làm đáp án.",
+      "reviewed_chunk_ids": [
+        "B:vinuni_graduation:p7:c2",
+        "B:vinuni_graduation:p7:c3",
+        "B:vinuni_graduation:p7:c1"
+      ]
+    },
+    {
+      "question_id": "Q20",
+      "strategy": "C",
+      "score": 2,
+      "reason": "Cùng B khi không filter: đủ loại giấy, đơn vị và đúng thời hạn trong hạng 2, truy nguồn/trang được; cần phân biệt hàng 12/13.",
+      "reviewed_chunk_ids": [
+        "B:vinuni_graduation:p7:c2",
+        "B:vinuni_graduation:p7:c3",
+        "B:vinuni_graduation:p7:c1"
+      ]
+    }
+  ],
+  "summary": {
+    "A": {
+      "questions": 5,
+      "counts": {
+        "0": 2,
+        "1": 0,
+        "2": 3
+      },
+      "mean": 1.2
+    },
+    "B": {
+      "questions": 5,
+      "counts": {
+        "0": 1,
+        "1": 0,
+        "2": 4
+      },
+      "mean": 1.6
+    },
+    "C": {
+      "questions": 5,
+      "counts": {
+        "0": 1,
+        "1": 0,
+        "2": 4
+      },
+      "mean": 1.6
+    }
+  },
+  "limitations": "Content review of retrieved top-3, not generated-answer accuracy; AI-assisted labels and small test set. Scores explicitly judged above, not automatically copied from hit labels."
+}

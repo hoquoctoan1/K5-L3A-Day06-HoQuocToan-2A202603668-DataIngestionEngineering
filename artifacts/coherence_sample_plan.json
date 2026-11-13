@@ -1,0 +1,243 @@
+{
+  "prepared_at_utc": "2026-11-13T15:08:39.244938+00:00",
+  "prepared_after_retrieval_test": true,
+  "method": "Before coherence scoring: first 10 pages sorted by (document_id,page numeric), anchor at floor(len(text)/2); select covering chunk with greatest starting offset, ties lexicographic greatest ID. C shares B. Offsets are zero-based, end exclusive.",
+  "limitations": "Chosen after dev/test retrieval was already seen; this is not a preregistered pre-test sample. Deterministic rule fixed before reading/scoring these samples. First 10 positions all belong to academic English PDF, so not representative of other topics/languages.",
+  "pages_clean_sha256": "dc1cb648054255b554f734087fc54adafbe55e5d362a3a17a41cefbfc6e55a4c",
+  "chunks_sha256": {
+    "A": "dba9e9c9a954f8aa7a3e52bf6cb2dac5bfdc5e5b81360c7a1ae9c4fa68c34092",
+    "B": "2479c811e7ac16faa1bd84da8243e2adb57eeec3b215fffbb9a8693a02814043"
+  },
+  "samples": [
+    {
+      "sample_id": "S01",
+      "document_id": "vinuni_academic",
+      "page": 4,
+      "anchor_char": 1220,
+      "choices": {
+        "A": {
+          "chunk_id": "A:vinuni_academic:p4:s900",
+          "start_char": 900,
+          "end_char": 1400
+        },
+        "B": {
+          "chunk_id": "B:vinuni_academic:p4:c5",
+          "start_char": 1150,
+          "end_char": 1601
+        },
+        "C": {
+          "chunk_id": "B:vinuni_academic:p4:c5",
+          "start_char": 1150,
+          "end_char": 1601
+        }
+      }
+    },
+    {
+      "sample_id": "S02",
+      "document_id": "vinuni_academic",
+      "page": 5,
+      "anchor_char": 1420,
+      "choices": {
+        "A": {
+          "chunk_id": "A:vinuni_academic:p5:s1350",
+          "start_char": 1350,
+          "end_char": 1850
+        },
+        "B": {
+          "chunk_id": "B:vinuni_academic:p5:c5",
+          "start_char": 1334,
+          "end_char": 1490
+        },
+        "C": {
+          "chunk_id": "B:vinuni_academic:p5:c5",
+          "start_char": 1334,
+          "end_char": 1490
+        }
+      }
+    },
+    {
+      "sample_id": "S03",
+      "document_id": "vinuni_academic",
+      "page": 6,
+      "anchor_char": 1212,
+      "choices": {
+        "A": {
+          "chunk_id": "A:vinuni_academic:p6:s900",
+          "start_char": 900,
+          "end_char": 1400
+        },
+        "B": {
+          "chunk_id": "B:vinuni_academic:p6:c5",
+          "start_char": 1098,
+          "end_char": 1442
+        },
+        "C": {
+          "chunk_id": "B:vinuni_academic:p6:c5",
+          "start_char": 1098,
+          "end_char": 1442
+        }
+      }
+    },
+    {
+      "sample_id": "S04",
+      "document_id": "vinuni_academic",
+      "page": 7,
+      "anchor_char": 1274,
+      "choices": {
+        "A": {
+          "chunk_id": "A:vinuni_academic:p7:s900",
+          "start_char": 900,
+          "end_char": 1400
+        },
+        "B": {
+          "chunk_id": "B:vinuni_academic:p7:c4",
+          "start_char": 1071,
+          "end_char": 1536
+        },
+        "C": {
+          "chunk_id": "B:vinuni_academic:p7:c4",
+          "start_char": 1071,
+          "end_char": 1536
+        }
+      }
+    },
+    {
+      "sample_id": "S05",
+      "document_id": "vinuni_academic",
+      "page": 8,
+      "anchor_char": 1231,
+      "choices": {
+        "A": {
+          "chunk_id": "A:vinuni_academic:p8:s900",
+          "start_char": 900,
+          "end_char": 1400
+        },
+        "B": {
+          "chunk_id": "B:vinuni_academic:p8:c4",
+          "start_char": 1083,
+          "end_char": 1535
+        },
+        "C": {
+          "chunk_id": "B:vinuni_academic:p8:c4",
+          "start_char": 1083,
+          "end_char": 1535
+        }
+      }
+    },
+    {
+      "sample_id": "S06",
+      "document_id": "vinuni_academic",
+      "page": 9,
+      "anchor_char": 1242,
+      "choices": {
+        "A": {
+          "chunk_id": "A:vinuni_academic:p9:s900",
+          "start_char": 900,
+          "end_char": 1400
+        },
+        "B": {
+          "chunk_id": "B:vinuni_academic:p9:c5",
+          "start_char": 1151,
+          "end_char": 1568
+        },
+        "C": {
+          "chunk_id": "B:vinuni_academic:p9:c5",
+          "start_char": 1151,
+          "end_char": 1568
+        }
+      }
+    },
+    {
+      "sample_id": "S07",
+      "document_id": "vinuni_academic",
+      "page": 10,
+      "anchor_char": 1349,
+      "choices": {
+        "A": {
+          "chunk_id": "A:vinuni_academic:p10:s900",
+          "start_char": 900,
+          "end_char": 1400
+        },
+        "B": {
+          "chunk_id": "B:vinuni_academic:p10:c5",
+          "start_char": 989,
+          "end_char": 1441
+        },
+        "C": {
+          "chunk_id": "B:vinuni_academic:p10:c5",
+          "start_char": 989,
+          "end_char": 1441
+        }
+      }
+    },
+    {
+      "sample_id": "S08",
+      "document_id": "vinuni_academic",
+      "page": 11,
+      "anchor_char": 1075,
+      "choices": {
+        "A": {
+          "chunk_id": "A:vinuni_academic:p11:s900",
+          "start_char": 900,
+          "end_char": 1400
+        },
+        "B": {
+          "chunk_id": "B:vinuni_academic:p11:c5",
+          "start_char": 996,
+          "end_char": 1416
+        },
+        "C": {
+          "chunk_id": "B:vinuni_academic:p11:c5",
+          "start_char": 996,
+          "end_char": 1416
+        }
+      }
+    },
+    {
+      "sample_id": "S09",
+      "document_id": "vinuni_academic",
+      "page": 12,
+      "anchor_char": 1529,
+      "choices": {
+        "A": {
+          "chunk_id": "A:vinuni_academic:p12:s1350",
+          "start_char": 1350,
+          "end_char": 1850
+        },
+        "B": {
+          "chunk_id": "B:vinuni_academic:p12:c7",
+          "start_char": 1405,
+          "end_char": 1815
+        },
+        "C": {
+          "chunk_id": "B:vinuni_academic:p12:c7",
+          "start_char": 1405,
+          "end_char": 1815
+        }
+      }
+    },
+    {
+      "sample_id": "S10",
+      "document_id": "vinuni_academic",
+      "page": 13,
+      "anchor_char": 1357,
+      "choices": {
+        "A": {
+          "chunk_id": "A:vinuni_academic:p13:s1350",
+          "start_char": 1350,
+          "end_char": 1850
+        },
+        "B": {
+          "chunk_id": "B:vinuni_academic:p13:c5",
+          "start_char": 1210,
+          "end_char": 1655
+        },
+        "C": {
+          "chunk_id": "B:vinuni_academic:p13:c5",
+          "start_char": 1210,
+          "end_char": 1655
+        }
+      }
+    }
+  ]
+}

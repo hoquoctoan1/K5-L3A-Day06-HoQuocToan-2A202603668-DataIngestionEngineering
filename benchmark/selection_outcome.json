@@ -1,0 +1,12 @@
+{
+  "recorded_at_utc": "2026-11-13T15:22:14.539508+00:00",
+  "recorded_after_test": true,
+  "selected_strategy": "C",
+  "selection_rule_source": "benchmark/selection_plan.json v1.0",
+  "decision_basis": "Dev Evidence Hit@3: A=11/15, B=11/15, C=12/15; chọn C trước test trong hội thoại.",
+  "historical_evidence": "Conversation before creation/run of benchmark_test.py; no standalone machine-timestamped decision file was saved then. This file records that history retrospectively and must not be described as a pre-test timestamped artifact.",
+  "dev_run": "dev_20261113_210325",
+  "test_run": "test_20261113_214547",
+  "test_used_to_tune": false,
+  "pipeline_changes_during_finalization": "Completed src library adapters and orchestration; verified normalization, chunk IDs/text, pinned document embedding, and dev query ranking parity. Original experimental scripts, corpus, query set, vectors, traces and hit labels were preserved."
+}

@@ -1,0 +1,31 @@
+{
+  "input_pages": 50,
+  "numeric_headers_removed_from_raw": 45,
+  "input_and_pdf_hashes_unchanged": true,
+  "metadata_unchanged": true,
+  "only_leading_page_number_removed": true,
+  "strategies": {
+    "A": {
+      "chunk_count": 273,
+      "previous_chunk_count": 273,
+      "digit_only_chunks": 0,
+      "previous_digit_only_chunks": 0,
+      "length_min": 78,
+      "length_max": 500,
+      "length_mean": 457.43,
+      "length_median": 500,
+      "total_chunk_characters": 124879
+    },
+    "B": {
+      "chunk_count": 350,
+      "previous_chunk_count": 374,
+      "digit_only_chunks": 0,
+      "previous_digit_only_chunks": 24,
+      "length_min": 17,
+      "length_max": 500,
+      "length_mean": 355.02,
+      "length_median": 398.0,
+      "total_chunk_characters": 124257
+    }
+  }
+}

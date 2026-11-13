@@ -1,0 +1,335 @@
+{
+  "schema_version": "1.0",
+  "corpus_id": "vinuni_student_policies_snapshot_2026_11_13",
+  "topic": "Tra cứu quy định học tập và chính sách dành cho sinh viên VinUni",
+  "page_numbering": "Số trang vật lý của PDF, bắt đầu từ 1; không đánh lại số sau khi lọc.",
+  "normalization": "Unicode NFC; chuẩn hóa xuống dòng, NBSP, khoảng trắng ngang và dòng trống; chỉ bỏ dòng đầu trùng đúng số trang vật lý. Chưa tái dựng bảng hoặc sửa từ bị tách; còn header/footer nhiều thành phần.",
+  "counting_policy": "Loại lịch sử sửa đổi, mục lục, trang chỉ có số trang và bản dịch lặp lại. Giữ trang thuật ngữ hữu ích. Loại lưu đồ tốt nghiệp vì bản trích chữ mất quan hệ nhánh, giữ mô tả chi tiết thay thế. Năm trang ngắn được giữ bổ sung nhưng không cộng vào tối thiểu 30 trang; đây là lựa chọn bảo thủ của corpus, không phải quy định ngưỡng ký tự của đề.",
+  "readiness": "Đã có 50 trang chuẩn hóa, chunk A/B, embedding thật, PostgreSQL và benchmark dev/test cùng audit. Quyền xử lý/chia sẻ vẫn chưa xác minh theo xác nhận của học viên; không coi hoàn tất kỹ thuật là đủ điều kiện công bố dữ liệu.",
+  "summary": {
+    "documents": 4,
+    "physical_pages": 67,
+    "included_pages": 50,
+    "counted_pages": 45,
+    "permission_verified": false,
+    "current_clean_char_count": 113729
+  },
+  "documents": [
+    {
+      "source_id": "vinuni_scholarship",
+      "title": "Quy định duy trì học bổng đầu vào và hỗ trợ tài chính",
+      "source_url": "https://policy.vinuni.edu.vn/wp-content/uploads/2025/09/GDL-SAM-004-V2.1_Tieu-chi-duy-tri-Hoc-bong-dau-vao-va-Ho-tro-tai-chinh_4.9.2025.pdf",
+      "language": "vi",
+      "category": "scholarship",
+      "version": "2.1",
+      "issued_date": "2025-09-04",
+      "effective_date": "2025-09-04",
+      "included_pages": [
+        2,
+        3
+      ],
+      "supplementary_pages": [],
+      "source_path_or_url": "data/GDL-SAM-004-V2.1_Tieu-chi-duy-tri-Hoc-bong-dau-vao-va-Ho-tro-tai-chinh_4.9.2025.pdf",
+      "sha256": "0ad0e7e350fc717be35cfacd626cad8fb859da8ef11c925e5460d86eea390087",
+      "accessed_at": "2026-11-13",
+      "accessed_at_note": "Ngày kiểm kê file local; không khẳng định ngày người dùng tải hay ngày kiểm tra hiệu lực chính sách.",
+      "license_or_permission": "Nguồn chính thức truy cập công khai; chưa xác minh giấy phép cho phép tái phân phối hoặc các điều kiện xử lý. Không suy ra giấy phép mở từ trạng thái Public.",
+      "permission_status": "not_verified",
+      "metadata_provenance": {
+        "category": "Nhãn phân loại của người chuẩn bị corpus, suy ra từ tiêu đề tài liệu.",
+        "language": "Ngôn ngữ của các trang được chọn.",
+        "issued_date": "Thông tin trên PDF; không đồng nhất với effective_date.",
+        "version": "Lịch sử sửa đổi; null nếu chưa xác minh.",
+        "effective_date": "Thông tin ghi rõ trên PDF; null nếu chưa xác minh."
+      },
+      "physical_page_count": 3,
+      "included_page_count": 2,
+      "counted_pages": [
+        2,
+        3
+      ],
+      "counted_page_count": 2,
+      "excluded_pages": [
+        {
+          "page": 1,
+          "reason": "Thông tin văn bản và lịch sử cập nhật; dùng cho metadata, không nạp nội dung."
+        }
+      ],
+      "included_normalized_char_count": 3669,
+      "included_clean_char_count_current": 3663,
+      "included_normalized_char_count_note": "Giữ số ký tự snapshot kiểm kê ban đầu; số ký tự sau chuẩn hóa hiện tại được ghi riêng trong included_clean_char_count_current."
+    },
+    {
+      "source_id": "vinuni_academic",
+      "title": "Academic Regulations for Full-Time Undergraduate Programs",
+      "source_url": "https://policy.vinuni.edu.vn/wp-content/uploads/2023/05/VU_HT03.EN_Academic-Regulations-For-Full-Time-Undergraduate-Programs_30102024.pdf",
+      "language": "en",
+      "category": "academic",
+      "version": "8.1",
+      "issued_date": "2024-10-30",
+      "effective_date": null,
+      "included_pages": [
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34
+      ],
+      "supplementary_pages": [
+        25,
+        30,
+        34
+      ],
+      "source_path_or_url": "data/VU_HT03.EN_Academic-Regulations-For-Full-Time-Undergraduate-Programs_30102024.pdf",
+      "sha256": "292fbda6b008625116de0c1a0b27f297ab73ce329a8b1fb6e35c9dc1506b6f10",
+      "accessed_at": "2026-11-13",
+      "accessed_at_note": "Ngày kiểm kê file local; không khẳng định ngày người dùng tải hay ngày kiểm tra hiệu lực chính sách.",
+      "license_or_permission": "Nguồn chính thức truy cập công khai; chưa xác minh giấy phép cho phép tái phân phối hoặc các điều kiện xử lý. Không suy ra giấy phép mở từ trạng thái Public.",
+      "permission_status": "not_verified",
+      "metadata_provenance": {
+        "category": "Nhãn phân loại của người chuẩn bị corpus, suy ra từ tiêu đề tài liệu.",
+        "language": "Ngôn ngữ của các trang được chọn.",
+        "issued_date": "Thông tin trên PDF; không đồng nhất với effective_date.",
+        "version": "Lịch sử sửa đổi; null nếu chưa xác minh.",
+        "effective_date": "Thông tin ghi rõ trên PDF; null nếu chưa xác minh."
+      },
+      "physical_page_count": 34,
+      "included_page_count": 31,
+      "counted_pages": [
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        26,
+        27,
+        28,
+        29,
+        31,
+        32,
+        33
+      ],
+      "counted_page_count": 28,
+      "excluded_pages": [
+        {
+          "page": 1,
+          "reason": "Thông tin văn bản và lịch sử sửa đổi."
+        },
+        {
+          "page": 2,
+          "reason": "Thông tin văn bản và lịch sử sửa đổi."
+        },
+        {
+          "page": 3,
+          "reason": "Mục lục."
+        }
+      ],
+      "included_normalized_char_count": 68812,
+      "included_clean_char_count_current": 68694,
+      "included_normalized_char_count_note": "Giữ số ký tự snapshot kiểm kê ban đầu; số ký tự sau chuẩn hóa hiện tại được ghi riêng trong included_clean_char_count_current."
+    },
+    {
+      "source_id": "vinuni_financial",
+      "title": "Quy định tài chính và biểu phí",
+      "source_url": "https://policy.vinuni.edu.vn/wp-content/uploads/2026/08/VU_TS03.VN_Quy-dinh-tai-chinh-va-Bieu-phi_AY26-27_22.7.2026_Student.pdf",
+      "language": "vi",
+      "category": "financial",
+      "version": null,
+      "issued_date": "2026-07-22",
+      "effective_date": null,
+      "included_pages": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "supplementary_pages": [
+        7
+      ],
+      "source_path_or_url": "data/VU_TS03.VN_Quy-dinh-tai-chinh-va-Bieu-phi_AY26-27_22.7.2026_Student.pdf",
+      "sha256": "9b84a8cbc5200ccd6ddccd0e32e1cf637fdbf1c73a796e7b00de5202b47c2a29",
+      "accessed_at": "2026-11-13",
+      "accessed_at_note": "Ngày kiểm kê file local; không khẳng định ngày người dùng tải hay ngày kiểm tra hiệu lực chính sách.",
+      "license_or_permission": "Nguồn chính thức truy cập công khai; chưa xác minh giấy phép cho phép tái phân phối hoặc các điều kiện xử lý. Không suy ra giấy phép mở từ trạng thái Public.",
+      "permission_status": "not_verified",
+      "metadata_provenance": {
+        "category": "Nhãn phân loại của người chuẩn bị corpus, suy ra từ tiêu đề tài liệu.",
+        "language": "Ngôn ngữ của các trang được chọn.",
+        "issued_date": "Thông tin trên PDF; không đồng nhất với effective_date.",
+        "version": "Lịch sử sửa đổi; null nếu chưa xác minh.",
+        "effective_date": "Thông tin ghi rõ trên PDF; null nếu chưa xác minh."
+      },
+      "physical_page_count": 14,
+      "included_page_count": 12,
+      "counted_pages": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "counted_page_count": 11,
+      "excluded_pages": [
+        {
+          "page": 1,
+          "reason": "Thông tin văn bản và mục lục."
+        },
+        {
+          "page": 14,
+          "reason": "Chỉ có số trang 14, không có nội dung hữu ích."
+        }
+      ],
+      "included_normalized_char_count": 32433,
+      "included_clean_char_count_current": 32393,
+      "included_normalized_char_count_note": "Giữ số ký tự snapshot kiểm kê ban đầu; số ký tự sau chuẩn hóa hiện tại được ghi riêng trong included_clean_char_count_current."
+    },
+    {
+      "source_id": "vinuni_graduation",
+      "title": "Quy trình xét tốt nghiệp và cấp bằng đại học chính quy",
+      "source_url": "https://policy.vinuni.edu.vn/wp-content/uploads/2024/11/VUNI.90_Quy-trinh-xet-Tot-nghiep-va-cap-bang-Dai-hoc_VN-EN.pdf",
+      "language": "vi",
+      "category": "graduation",
+      "version": "1.0",
+      "issued_date": "2024-11-12",
+      "effective_date": "2024-11-07",
+      "included_pages": [
+        2,
+        5,
+        6,
+        7,
+        8
+      ],
+      "supplementary_pages": [
+        8
+      ],
+      "source_path_or_url": "data/VUNI.90_Quy-trinh-xet-Tot-nghiep-va-cap-bang-Dai-hoc_VN-EN.pdf",
+      "sha256": "c26f06f738209e47b8fe9446f3dcc6d82bb6bcc6af9d56e7c0bfcaef29ec3a83",
+      "accessed_at": "2026-11-13",
+      "accessed_at_note": "Ngày kiểm kê file local; không khẳng định ngày người dùng tải hay ngày kiểm tra hiệu lực chính sách.",
+      "license_or_permission": "Nguồn chính thức truy cập công khai; chưa xác minh giấy phép cho phép tái phân phối hoặc các điều kiện xử lý. Không suy ra giấy phép mở từ trạng thái Public.",
+      "permission_status": "not_verified",
+      "metadata_provenance": {
+        "category": "Nhãn phân loại của người chuẩn bị corpus, suy ra từ tiêu đề tài liệu.",
+        "language": "Ngôn ngữ của các trang được chọn.",
+        "issued_date": "Thông tin trên PDF; không đồng nhất với effective_date.",
+        "version": "Lịch sử sửa đổi; null nếu chưa xác minh.",
+        "effective_date": "Thông tin ghi rõ trên PDF; null nếu chưa xác minh."
+      },
+      "physical_page_count": 16,
+      "included_page_count": 5,
+      "counted_pages": [
+        2,
+        5,
+        6,
+        7
+      ],
+      "counted_page_count": 4,
+      "excluded_pages": [
+        {
+          "page": 1,
+          "reason": "Thông tin văn bản và lịch sử cập nhật."
+        },
+        {
+          "page": 3,
+          "reason": "Lưu đồ; quan hệ nhánh không được bảo toàn khi trích chữ. Dùng mô tả chi tiết ở trang 5-7 thay thế."
+        },
+        {
+          "page": 4,
+          "reason": "Lưu đồ; quan hệ nhánh không được bảo toàn khi trích chữ. Dùng mô tả chi tiết ở trang 5-7 thay thế."
+        },
+        {
+          "page": 9,
+          "reason": "Bản tiếng Anh tương ứng phần tiếng Việt; loại để không nhân đôi nội dung song ngữ."
+        },
+        {
+          "page": 10,
+          "reason": "Bản tiếng Anh tương ứng phần tiếng Việt; loại để không nhân đôi nội dung song ngữ."
+        },
+        {
+          "page": 11,
+          "reason": "Bản tiếng Anh tương ứng phần tiếng Việt; loại để không nhân đôi nội dung song ngữ."
+        },
+        {
+          "page": 12,
+          "reason": "Bản tiếng Anh tương ứng phần tiếng Việt; loại để không nhân đôi nội dung song ngữ."
+        },
+        {
+          "page": 13,
+          "reason": "Bản tiếng Anh tương ứng phần tiếng Việt; loại để không nhân đôi nội dung song ngữ."
+        },
+        {
+          "page": 14,
+          "reason": "Bản tiếng Anh tương ứng phần tiếng Việt; loại để không nhân đôi nội dung song ngữ."
+        },
+        {
+          "page": 15,
+          "reason": "Bản tiếng Anh tương ứng phần tiếng Việt; loại để không nhân đôi nội dung song ngữ."
+        },
+        {
+          "page": 16,
+          "reason": "Bản tiếng Anh tương ứng phần tiếng Việt; loại để không nhân đôi nội dung song ngữ."
+        }
+      ],
+      "included_normalized_char_count": 8979,
+      "included_clean_char_count_current": 8979,
+      "included_normalized_char_count_note": "Giữ số ký tự snapshot kiểm kê ban đầu; số ký tự sau chuẩn hóa hiện tại được ghi riêng trong included_clean_char_count_current."
+    }
+  ],
+  "permission_confirmation_note": "Học viên xác nhận trong hội thoại: chưa xác minh quyền của cả bốn PDF. Chưa có giấy phép hoặc văn bản cho phép được cung cấp."
+}

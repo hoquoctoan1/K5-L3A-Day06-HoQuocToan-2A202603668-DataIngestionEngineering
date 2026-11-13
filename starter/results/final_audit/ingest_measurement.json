@@ -1,0 +1,28 @@
+{
+  "captured_at_utc": "2026-11-13T15:15:48.377819+00:00",
+  "scope": "Fresh replay into temporary table using pinned local model. Single run, warm files/cache. Excludes initial model/PDF downloads, dependency installation and Docker startup. Not original experiment ingest timing.",
+  "extract_normalize_seconds": 7.832189600001584,
+  "model_load_seconds": 33.84574050000083,
+  "strategies": {
+    "A": {
+      "chunk_count": 273,
+      "chunk_seconds": 0.001775599997927202,
+      "embedding_seconds": 25.749322499999835,
+      "store_seconds": 0.4138740999987931,
+      "passage_tokens_total": 30674,
+      "passage_tokens_max": 166,
+      "vector_max_abs_diff": 0.0
+    },
+    "B": {
+      "chunk_count": 350,
+      "chunk_seconds": 0.007274700001289602,
+      "embedding_seconds": 19.261538899998413,
+      "store_seconds": 0.2985977999996976,
+      "passage_tokens_total": 30972,
+      "passage_tokens_max": 164,
+      "vector_max_abs_diff": 0.0
+    }
+  },
+  "measured_wall_seconds": 88.60853689999931,
+  "production_unchanged": true
+}

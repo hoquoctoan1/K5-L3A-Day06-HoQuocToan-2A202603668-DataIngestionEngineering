@@ -8,3 +8,13 @@ __pycache__/
 .DS_Store
 .pytest_cache/
 *.sqlite
+
+# Local corpus/derived full text: redistribution permission has not been verified.
+data/*.pdf
+starter/results/pages*.json
+starter/results/chunks_*.json
+starter/results/embeddings_*.json
+starter/results/**/traces.json
+starter/results/**/*_review.json
+starter/results/final_audit/coherence.json
+# Compact metrics/methods remain visible; benchmark/report excerpts still require rights review.

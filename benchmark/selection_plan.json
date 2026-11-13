@@ -1,0 +1,44 @@
+{
+  "version": "1.0",
+  "prepared_at": "2026-11-13",
+  "corpus_id": "vinuni_student_policies_snapshot_2026_11_13",
+  "questions_sha256": "49b27f0a0422fce8f327f01510d3ff0180a8e15c5c1f619f1aeed1553fa18281",
+  "pages_clean_sha256": "dc1cb648054255b554f734087fc54adafbe55e5d362a3a17a41cefbfc6e55a4c",
+  "source_snapshots": {
+    "vinuni_scholarship": "0ad0e7e350fc717be35cfacd626cad8fb859da8ef11c925e5460d86eea390087",
+    "vinuni_academic": "292fbda6b008625116de0c1a0b27f297ab73ce329a8b1fb6e35c9dc1506b6f10",
+    "vinuni_financial": "9b84a8cbc5200ccd6ddccd0e32e1cf637fdbf1c73a796e7b00de5202b47c2a29",
+    "vinuni_graduation": "c26f06f738209e47b8fe9446f3dcc6d82bb6bcc6af9d56e7c0bfcaef29ec3a83"
+  },
+  "split_counts": {
+    "dev": 15,
+    "test": 5
+  },
+  "topic_counts": {
+    "scholarship": 5,
+    "academic": 5,
+    "financial": 5,
+    "graduation": 5
+  },
+  "filter_counts": {
+    "dev": 4,
+    "test": 1
+  },
+  "split_method": "Chọn thủ công theo chủ đề trước truy xuất; 5 câu mỗi nhóm; 15 dev và 5 test đều phủ cả 4 nhóm. Không chọn theo kết quả chunk hoặc retrieval.",
+  "selection_rule": [
+    "Ưu tiên Evidence Hit@3 trên dev",
+    "Nếu bằng nhau ưu tiên Hit@1 trên dev",
+    "Nếu tiếp tục bằng nhau ưu tiên số chunk ít hơn",
+    "Nếu vẫn bằng nhau chọn theo thứ tự A rồi B rồi C"
+  ],
+  "test_protocol": "Không dùng kết quả test để sửa cấu hình. Chốt cấu hình bằng dev rồi mới chạy test; báo riêng dev/test và giữ nguyên câu hỏi.",
+  "evidence_normalization": "Unicode NFC và gộp khoảng trắng liên tiếp khi so khớp; không tự sửa từ bị tách hoặc số liệu.",
+  "verification": "20/20 evidence được kiểm chứng tồn tại trong trang PDF gốc và pages_clean.json; không xác nhận tính hiệu lực hiện tại của chính sách.",
+  "limitations": [
+    "Dev/test dùng chung 4 tài liệu và một số trang nên có nguy cơ rò rỉ theo nội dung; không phải phép kiểm tra tổng quát ngoài corpus.",
+    "Câu hỏi đều bằng tiếng Việt, trong khi quy chế học thuật bằng tiếng Anh; có yếu tố tìm kiếm xuyên ngôn ngữ.",
+    "Có lỗi tách chữ trong bản trích xuất; bảng cần đối chiếu PDF. Một số trang quan trọng đã được kiểm tra trực quan.",
+    "Bộ câu hỏi nhỏ và được AI hỗ trợ soạn; người học cần đọc lại đáp án và giải thích được bằng chứng.",
+    "Chưa có kết quả truy xuất, nhãn hit, điểm grounding hoặc coherence. Không coi kiểm chứng evidence là điểm retrieval."
+  ]
+}

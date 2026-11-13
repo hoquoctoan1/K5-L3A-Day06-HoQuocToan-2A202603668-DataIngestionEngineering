@@ -17,16 +17,19 @@ results/                          # thống kê, trace, nhãn audit, log
 report/individual/<MSSV>_<HoTen>.md
 ```
 
-Mẫu báo cáo: [report/individual/MSSV_HoTen.md](report/individual/MSSV_HoTen.md). `src/` có thể đặt ở root hoặc `starter/src/`; benchmark và dữ liệu thật do học viên tạo. Nếu không được phép nộp dữ liệu gốc hoặc trace chứa nội dung bị hạn chế, cung cấp hướng dẫn truy cập/tái tạo và minh chứng được phép chia sẻ; báo cho người chấm biết cách xác minh.
+Mẫu báo cáo: [REPORT_TEMPLATE.md](REPORT_TEMPLATE.md). `src/` có thể đặt ở root hoặc `starter/src/`; benchmark và dữ liệu thật do học viên tạo. Nếu không được phép nộp dữ liệu gốc hoặc trace chứa nội dung bị hạn chế, cung cấp hướng dẫn truy cập/tái tạo và minh chứng được phép chia sẻ; báo cho người chấm biết cách xác minh.
 
-## Checklist
+## Checklist hiện trạng bài VinUni
 
-- [ ] Dữ liệu ≥30 trang nội dung hợp lệ, manifest ghi nguồn, quyền, số trang và quy tắc tính.
-- [ ] ≥20 câu theo [BENCHMARK.md](BENCHMARK.md), có evidence đã kiểm chứng và tách tối thiểu 15 dev / 5 test trước thử nghiệm.
-- [ ] Có embedding model thật và vector store hỗ trợ lưu bền vững, vector search, metadata filter; ghi phiên bản và cấu hình.
-- [ ] Có ba cấu hình, một so sánh thay đúng một yếu tố; cùng model, corpus và benchmark.
-- [ ] Chạy đủ và lưu trace top-3, chỉ số dev/test; ghi chi phí, model và thời gian.
-- [ ] Có audit thủ công và phân tích cả 5 khía cạnh theo GUIDE; ghi giới hạn.
-- [ ] Có lệnh chạy, code, manifest, experiment log và báo cáo cá nhân.
-- [ ] Không có secret, dữ liệu riêng tư hoặc dữ liệu không được phép chia sẻ.
-- [ ] Repo mở được cho người chấm và đã nộp link theo hướng dẫn lớp.
+- [ ] Quyền xử lý/chia sẻ tài liệu được xác minh: **chưa xác minh, học viên đã xác nhận**. Phần số lượng có bằng chứng 45 trang nội dung, nhưng không tick trọn tiêu chí nguồn/quyền.
+- [x] Có 20 câu, 15 dev/5 test chốt trước truy xuất, evidence được kiểm chứng và câu có filter.
+- [x] Model thật E5 local và PostgreSQL/pgvector lưu bền vững; ghi phiên bản và cosine.
+- [x] A/B/C cùng model/corpus/benchmark; B–C chỉ thay filter.
+- [x] Có đầy đủ 60 trace dev/test, nhãn AI hỗ trợ có lý do, metric, số chunk, thời gian và chi phí API có phạm vi rõ.
+- [x] Có coherence, metadata, grounding và phân tích 5 khía cạnh; ghi mẫu coherence chọn sau retrieval và giới hạn AI judge.
+- [x] Có mã đã hiện thực trong starter/src, script, lệnh chạy, manifest, experiment log và báo cáo cá nhân.
+- [ ] Bản công bố/nộp không có dữ liệu chưa được phép chia sẻ: **chưa thể xác nhận** khi quyền PDF/trích xuất vẫn chưa xác minh. .env/venv được loại khỏi Git; artifact nội dung đang giữ local.
+- [ ] Commit chốt bản hoàn thiện: **học viên tự thực hiện**, commit cũ 42f64eb chưa bao gồm bản hoàn thiện này.
+- [ ] Repo mở được cho người chấm và link đã nộp: **học viên sẽ tự nộp**, chưa kiểm chứng quyền truy cập hoặc bằng chứng nộp.
+
+Xem [báo cáo](report/individual/2A202603668_HoQuocToan.md), [hướng dẫn chạy](README.md), [audit](starter/results/final_audit/README.md). Không coi các mục đã tick kỹ thuật là xác nhận toàn bộ bài đã đáp ứng điều kiện quyền dữ liệu hoặc đã nộp thành công.

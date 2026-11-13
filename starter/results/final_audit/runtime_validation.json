@@ -1,0 +1,126 @@
+{
+  "captured_at_utc": "2026-11-13T15:12:33.515535+00:00",
+  "artifacts": {
+    "pages": 50,
+    "counted_pages": 45,
+    "chunk_counts": {
+      "A": 273,
+      "B": 350
+    },
+    "reviewed_searches": 60,
+    "checks": "PDF/source hashes; 50-page normalization; all A/B chunks exactly match src implementation; all stored vector dimensions/norms; all 60 dev/test reviews/traces/exact labels/filters"
+  },
+  "database": {
+    "postgres": "PostgreSQL 16.16 (Debian 16.16-1.pgdg12+1) on x86_64-pc-linux-gnu, compiled by gcc (Debian 12.2.0-14+deb12u1) 12.2.0, 64-bit",
+    "pgvector": "0.8.7",
+    "counts": [
+      {
+        "strategy": "A",
+        "rows": 273,
+        "distinct_ids": 273
+      },
+      {
+        "strategy": "B",
+        "rows": 350,
+        "distinct_ids": 350
+      }
+    ]
+  },
+  "new_temp_ingestion_measurements": [
+    {
+      "repeat": 1,
+      "strategy": "A",
+      "seconds": 0.2417414000010467,
+      "rows": 273,
+      "ids": 273
+    },
+    {
+      "repeat": 1,
+      "strategy": "B",
+      "seconds": 0.2925850999999966,
+      "rows": 350,
+      "ids": 350
+    },
+    {
+      "repeat": 2,
+      "strategy": "A",
+      "seconds": 0.28965619999871706,
+      "rows": 273,
+      "ids": 273
+    },
+    {
+      "repeat": 2,
+      "strategy": "B",
+      "seconds": 0.3189633000001777,
+      "rows": 350,
+      "ids": 350
+    }
+  ],
+  "stale_snapshot_check": {
+    "scope": "temporary table only",
+    "original_A": 273,
+    "shortened_A": 272,
+    "restored_A": 273,
+    "passed": true
+  },
+  "adapter_document_vector_max_abs_diff": 3.91155481338501e-08,
+  "dev_query_parity": [
+    {
+      "question_id": "Q01",
+      "strategy": "A",
+      "chunk_ids": [
+        "A:vinuni_scholarship:p2:s0",
+        "A:vinuni_financial:p10:s450",
+        "A:vinuni_scholarship:p2:s900"
+      ]
+    },
+    {
+      "question_id": "Q01",
+      "strategy": "B",
+      "chunk_ids": [
+        "B:vinuni_scholarship:p2:c2",
+        "B:vinuni_scholarship:p2:c4",
+        "B:vinuni_financial:p10:c3"
+      ]
+    },
+    {
+      "question_id": "Q01",
+      "strategy": "C",
+      "chunk_ids": [
+        "B:vinuni_scholarship:p2:c2",
+        "B:vinuni_scholarship:p2:c4",
+        "B:vinuni_scholarship:p2:c1"
+      ]
+    },
+    {
+      "question_id": "Q06",
+      "strategy": "A",
+      "chunk_ids": [
+        "A:vinuni_financial:p2:s1350",
+        "A:vinuni_financial:p11:s1350",
+        "A:vinuni_financial:p2:s1800"
+      ]
+    },
+    {
+      "question_id": "Q06",
+      "strategy": "B",
+      "chunk_ids": [
+        "B:vinuni_financial:p4:c5",
+        "B:vinuni_financial:p2:c7",
+        "B:vinuni_financial:p2:c6"
+      ]
+    },
+    {
+      "question_id": "Q06",
+      "strategy": "C",
+      "chunk_ids": [
+        "B:vinuni_academic:p11:c5",
+        "B:vinuni_academic:p30:c1",
+        "B:vinuni_academic:p17:c1"
+      ]
+    }
+  ],
+  "production_table_unchanged": true,
+  "production_table_fingerprint_sha256": "e61df728e2770ee4d8e3277eb9d3141a43324a5a5a947e17870bd5b87d2452b6",
+  "measurement_scope": "New validation run; timings measure database upsert of already embedded artifacts into temporary table. Not the original ingest time or full end-to-end pipeline time. No test retrieval rerun or tuning. Temporary table removed on connection close."
+}

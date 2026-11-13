@@ -1,0 +1,12 @@
+# Observed working local environment; CPU torch wheel comes from the CPU index.
+--extra-index-url https://download.pytorch.org/whl/cpu
+-r requirements.txt
+sentence-transformers==6.3.0
+torch==2.11.0+cpu
+transformers==5.22.2
+huggingface-hub==2.4.0
+numpy==2.4.6
+safetensors==0.8.0
+tokenizers==0.23.3
+pypdf==6.21.4
+python-dotenv==1.2.4

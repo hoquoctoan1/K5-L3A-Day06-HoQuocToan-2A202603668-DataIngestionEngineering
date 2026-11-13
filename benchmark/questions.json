@@ -1,0 +1,272 @@
+[
+  {
+    "id": "Q01",
+    "split": "dev",
+    "topic": "scholarship",
+    "question_type": "paraphrase",
+    "question": "Theo quy định duy trì học bổng đầu vào, học bổng tài năng có được nâng cấp mức trong quá trình học không?",
+    "expected_answer": "Không. Học bổng đầu vào dựa trên thành tích không được nâng cấp mức trong quá trình học.",
+    "gold_source_id": "vinuni_scholarship",
+    "gold_page": 2,
+    "evidence_quote": "Học bổng tài năng (học bổng dựa trên thành tích): Học bổng đầu vào dựa trên thành tích được cấp cho toàn bộ thời gian học và không được nâng cấp mức học bổng trong quá trình học.",
+    "filter": {
+      "category": "scholarship"
+    },
+    "filter_context": "Input giả định: người dùng chọn phạm vi category=scholarship trước khi truy xuất; không suy ra filter từ gold."
+  },
+  {
+    "id": "Q02",
+    "split": "dev",
+    "topic": "academic",
+    "question_type": "direct",
+    "question": "Theo quy chế đào tạo, một tín chỉ tương đương tổng cộng bao nhiêu giờ học, tính cả các hoạt động học tập chứ không chỉ giờ lên lớp?",
+    "expected_answer": "Một tín chỉ tương đương 50 giờ học, gồm học có hướng dẫn, tutorial, tự học, học trải nghiệm, đánh giá và thi.",
+    "gold_source_id": "vinuni_academic",
+    "gold_page": 7,
+    "evidence_quote": "A credit is equivalent to 50 hours of study for students, including taught study (contact hours) , tutorials, self-managed study, experiential learning, assessments, and exams.",
+    "filter": {},
+    "filter_context": "Không có yêu cầu lọc; C truy xuất không filter như B."
+  },
+  {
+    "id": "Q03",
+    "split": "dev",
+    "topic": "financial",
+    "question_type": "conditional",
+    "question": "Ứng viên đã vào vòng phỏng vấn và không thuộc diện miễn phí phải nộp bao nhiêu tiền phí xét tuyển hồ sơ cho mỗi lần?",
+    "expected_answer": "2.000.000 đồng/lần/ứng viên được vào vòng phỏng vấn, nếu không thuộc diện được miễn.",
+    "gold_source_id": "vinuni_financial",
+    "gold_page": 2,
+    "evidence_quote": "1. Phí xét tuyển hồ sơ • Phí xét tuyển hồ sơ là chi phí xử lý sàng lọc hồ sơ khi Ứng viên nộp hồ sơ dự tuyển vào Trường • Mức phí 2.000.000 đồng/lần/ứng viên được vào vòng phỏng vấn",
+    "filter": {
+      "category": "financial"
+    },
+    "filter_context": "Input giả định: người dùng chọn phạm vi category=financial trước khi truy xuất; không suy ra filter từ gold."
+  },
+  {
+    "id": "Q04",
+    "split": "dev",
+    "topic": "graduation",
+    "question_type": "direct",
+    "question": "Sau khi kế hoạch xét tốt nghiệp được thông qua, sinh viên được thông báo qua những kênh nào?",
+    "expected_answer": "Kế hoạch phải được công bố cho sinh viên qua email hoặc website ngay sau khi được thông qua.",
+    "gold_source_id": "vinuni_graduation",
+    "gold_page": 5,
+    "evidence_quote": "Kế hoạch xét tốt nghiệp ngay sau khi được thông qua phải được công bố cho sinh viên qua các hình thức email/website.",
+    "filter": {
+      "category": "graduation"
+    },
+    "filter_context": "Input giả định: người dùng chọn phạm vi category=graduation trước khi truy xuất; không suy ra filter từ gold."
+  },
+  {
+    "id": "Q05",
+    "split": "dev",
+    "topic": "scholarship",
+    "question_type": "direct",
+    "question": "Đối với học bổng tài năng toàn phần hoặc 100%, ngưỡng điểm trung bình theo năm học được nêu trong điều kiện duy trì là bao nhiêu?",
+    "expected_answer": "Từ 3,2 trở lên; tài liệu mô tả theo năm học được đánh giá và trung bình GPA của hai học kỳ chính Mùa thu và Mùa xuân. Đây chỉ là điều kiện điểm, không phải toàn bộ điều kiện duy trì.",
+    "gold_source_id": "vinuni_scholarship",
+    "gold_page": 2,
+    "evidence_quote": "1 Học bổng Tài năng Toàn phần và 100% Điều kiện duy trì: 1. Duy trì điểm trung bình chung tích lũy (CGPA) từ 3,2 trở lên trong năm học được đánh giá (trung bình chung GPA của hai học kỳ chính: Học kỳ Mùa thu và Học kỳ Mùa xuân ).",
+    "filter": {},
+    "filter_context": "Không có yêu cầu lọc; C truy xuất không filter như B."
+  },
+  {
+    "id": "Q06",
+    "split": "dev",
+    "topic": "academic",
+    "question_type": "direct",
+    "question": "Để được phân loại là sinh viên toàn thời gian trong học kỳ chính, sinh viên phải đăng ký ít nhất bao nhiêu phần trăm tải học chuẩn và tương đương bao nhiêu tín chỉ?",
+    "expected_answer": "Ít nhất 80% tải học chuẩn trong học kỳ chính, tương đương 12 tín chỉ.",
+    "gold_source_id": "vinuni_academic",
+    "gold_page": 11,
+    "evidence_quote": "To be classified as a full-time student, s/he must be enrolled in at a minimum, 80% of a normal full-time load in a regular Semester (equivalent to 12 credits).",
+    "filter": {
+      "category": "academic"
+    },
+    "filter_context": "Input giả định: người dùng chọn phạm vi category=academic trước khi truy xuất; không suy ra filter từ gold."
+  },
+  {
+    "id": "Q07",
+    "split": "dev",
+    "topic": "financial",
+    "question_type": "paraphrase",
+    "question": "Nếu trả muộn tài liệu thư viện dành riêng cho khóa học, phí quá hạn được tính theo giờ hay ngày và mức phí là bao nhiêu?",
+    "expected_answer": "Tính theo giờ: 10.000 đồng/giờ quá hạn/tài liệu dành riêng cho khóa học.",
+    "gold_source_id": "vinuni_financial",
+    "gold_page": 3,
+    "evidence_quote": "Đối với tài liệu dành riêng cho khóa học: 10.000 đồng/giờ quá hạn/tài liệu",
+    "filter": {},
+    "filter_context": "Không có yêu cầu lọc; C truy xuất không filter như B."
+  },
+  {
+    "id": "Q08",
+    "split": "dev",
+    "topic": "graduation",
+    "question_type": "conditional",
+    "question": "Sinh viên có tên trong danh sách xét tốt nghiệp nhưng chưa làm học phần tốt nghiệp hoặc chưa tích lũy đủ điều kiện có phải đăng ký hoãn xét tốt nghiệp không?",
+    "expected_answer": "Không cần đăng ký hoãn xét tốt nghiệp trong trường hợp đó.",
+    "gold_source_id": "vinuni_graduation",
+    "gold_page": 6,
+    "evidence_quote": "Sinh viên có tên trong danh sách nhưng chưa thực hiện học phần tốt nghiệp hoặc chưa tích lũy đủ điều kiện tốt nghiệp không cần đăng ký HOÃN xét tốt nghiệp.",
+    "filter": {},
+    "filter_context": "Không có yêu cầu lọc; C truy xuất không filter như B."
+  },
+  {
+    "id": "Q09",
+    "split": "dev",
+    "topic": "scholarship",
+    "question_type": "direct",
+    "question": "Với học bổng tài năng các mức 50%, 60%, 70%, 80% hoặc 90%, ngưỡng điểm trung bình năm học trong điều kiện duy trì là bao nhiêu?",
+    "expected_answer": "Từ 2,5 trở lên trong năm học được đánh giá, tính theo trung bình GPA hai học kỳ chính. Các điều kiện kỷ luật và E.X.C.E.L vẫn áp dụng.",
+    "gold_source_id": "vinuni_scholarship",
+    "gold_page": 3,
+    "evidence_quote": "2 Học bổng Tài năng 50%; 60%; 70%; 80%; 90% Điều kiện duy trì : 1. Duy trì điểm trung bình chung năm học từ 2,5 trở lên trong năm học được đánh giá (trung bình chung GPA của hai học kỳ chính: Học kỳ mùa thu và Học kỳ mùa xuân).",
+    "filter": {},
+    "filter_context": "Không có yêu cầu lọc; C truy xuất không filter như B."
+  },
+  {
+    "id": "Q10",
+    "split": "dev",
+    "topic": "academic",
+    "question_type": "direct",
+    "question": "Trong học kỳ hè, sinh viên được học tối đa bao nhiêu tín chỉ và có mức tín chỉ tối thiểu bắt buộc không?",
+    "expected_answer": "Tối đa 9 tín chỉ và không có mức tín chỉ tối thiểu bắt buộc.",
+    "gold_source_id": "vinuni_academic",
+    "gold_page": 12,
+    "evidence_quote": "Summer session (semester): Summer session (semester): up to 9 credits with no required minimum study load.",
+    "filter": {},
+    "filter_context": "Không có yêu cầu lọc; C truy xuất không filter như B."
+  },
+  {
+    "id": "Q11",
+    "split": "dev",
+    "topic": "financial",
+    "question_type": "direct",
+    "question": "Làm lại thẻ sinh viên phải đóng bao nhiêu tiền và khoản phí được thu lúc nào?",
+    "expected_answer": "200.000 đồng/thẻ, thu tại thời điểm đăng ký làm lại thẻ.",
+    "gold_source_id": "vinuni_financial",
+    "gold_page": 4,
+    "evidence_quote": "1. Phí cấp lại thẻ sinh viên 200.000 đồng/thẻ Thời điểm đăng ký làm lại thẻ",
+    "filter": {},
+    "filter_context": "Không có yêu cầu lọc; C truy xuất không filter như B."
+  },
+  {
+    "id": "Q12",
+    "split": "dev",
+    "topic": "graduation",
+    "question_type": "direct",
+    "question": "Theo mục hiệu lực thi hành, quy trình xét tốt nghiệp và cấp bằng đại học này có hiệu lực từ ngày nào?",
+    "expected_answer": "Ngày 07/11/2024. Không nhầm với ngày phát hành 12/11/2024.",
+    "gold_source_id": "vinuni_graduation",
+    "gold_page": 8,
+    "evidence_quote": "6. HIỆU LỰC THI HÀNH Quy trình này có hiệu lực từ ngày 07/11/2024.",
+    "filter": {},
+    "filter_context": "Không có yêu cầu lọc; C truy xuất không filter như B."
+  },
+  {
+    "id": "Q13",
+    "split": "dev",
+    "topic": "scholarship",
+    "question_type": "paraphrase",
+    "question": "Học bổng liên thông Vinschool–VinUni mức 5% có phải đáp ứng yêu cầu gia hạn riêng được nêu trong bảng không?",
+    "expected_answer": "Không có yêu cầu riêng; học bổng được gia hạn tự động theo dòng tương ứng trong bảng.",
+    "gold_source_id": "vinuni_scholarship",
+    "gold_page": 3,
+    "evidence_quote": "3 Học bổng Liên thông Vinschool-VinUni 5% Không yêu cầu - gia hạn tự động",
+    "filter": {},
+    "filter_context": "Không có yêu cầu lọc; C truy xuất không filter như B."
+  },
+  {
+    "id": "Q14",
+    "split": "dev",
+    "topic": "academic",
+    "question_type": "direct",
+    "question": "Trong các điều kiện xét cấp bằng, điểm trung bình tích lũy tối thiểu của các học phần thuộc chương trình phải đạt bao nhiêu trên thang 4?",
+    "expected_answer": "Tối thiểu 2,00/4,00. Sinh viên còn phải đáp ứng các điều kiện tốt nghiệp khác; đạt GPA này không tự động đủ điều kiện.",
+    "gold_source_id": "vinuni_academic",
+    "gold_page": 31,
+    "evidence_quote": "Earn a minimum cumulative grade point average (GPA) at 2.0 0/4.00 for all courses within the degree program;",
+    "filter": {},
+    "filter_context": "Không có yêu cầu lọc; C truy xuất không filter như B."
+  },
+  {
+    "id": "Q15",
+    "split": "dev",
+    "topic": "financial",
+    "question_type": "direct",
+    "question": "Sinh viên xin bảo lưu hoặc thôi học phải nộp đơn trước ngày thôi học chính thức ít nhất bao nhiêu ngày?",
+    "expected_answer": "Tối thiểu 30 ngày trước ngày thôi học chính thức.",
+    "gold_source_id": "vinuni_financial",
+    "gold_page": 11,
+    "evidence_quote": "Sinh viên bảo lưu/rút hồ sơ/thôi học, trong mọi trường hợp, cần nộp đơn bảo lưu/thôi học cho Nhà trường tối thiểu 30 ngày trước ngày Sinh viên thôi học chính thức.",
+    "filter": {},
+    "filter_context": "Không có yêu cầu lọc; C truy xuất không filter như B."
+  },
+  {
+    "id": "Q16",
+    "split": "test",
+    "topic": "scholarship",
+    "question_type": "multi_condition",
+    "question": "Theo dòng Hỗ trợ Tài chính từ 50%, sinh viên phải đáp ứng điều kiện điểm và hoạt động E.X.C.E.L nào để duy trì hỗ trợ?",
+    "expected_answer": "Duy trì điểm trung bình chung từ 2,0 trong năm học được đánh giá, tính theo trung bình GPA hai học kỳ chính; hoàn thành bản tự đánh giá E.X.C.E.L và gặp cố vấn để thảo luận.",
+    "gold_source_id": "vinuni_scholarship",
+    "gold_page": 3,
+    "evidence_quote": "8 Hỗ trợ Tài chính Từ 50% 1. Duy trì điểm trung bình chung từ 2,0 trong năm học được đánh giá (trung bình chung GPA của hai học kỳ chính: Học kỳ mùa thu và Học kỳ mùa xuân ). 2. Hoàn thành bản tự đánh giá E .X.C.E.L và gặp Cố vấn để thảo luận về bản tự đánh giá.",
+    "filter": {},
+    "filter_context": "Không có yêu cầu lọc; C truy xuất không filter như B."
+  },
+  {
+    "id": "Q17",
+    "split": "test",
+    "topic": "academic",
+    "question_type": "conditional",
+    "question": "Nếu nhập học khi chưa xác định ngành chính, sinh viên phải khai báo ngành chính chậm nhất vào thời điểm nào?",
+    "expected_answer": "Chậm nhất vào cuối năm học thứ hai.",
+    "gold_source_id": "vinuni_academic",
+    "gold_page": 10,
+    "evidence_quote": "Students having an undeclared major shall declare their home major at the latest by the end of the second year.",
+    "filter": {},
+    "filter_context": "Không có yêu cầu lọc; C truy xuất không filter như B."
+  },
+  {
+    "id": "Q18",
+    "split": "test",
+    "topic": "financial",
+    "question_type": "conditional",
+    "question": "Theo mục hoàn trả học phí khi chủ động thôi học, nếu thôi học sau hai tuần kể từ ngày đầu của học kỳ thì học phí thực nộp của học kỳ đó có được hoàn lại không?",
+    "expected_answer": "Không hoàn trả học phí thực nộp của học kỳ đó theo quy tắc thôi học sau hai tuần. Câu này không hỏi các ngoại lệ đóng cửa trường hoặc bất khả kháng ở mục khác.",
+    "gold_source_id": "vinuni_financial",
+    "gold_page": 11,
+    "evidence_quote": "Không hoàn trả Học phí thực nộp của khóa học hoặc học kỳ khi Sinh viên thôi học sau 2 tuần kể từ ngày đầu tiên của khóa học hoặc học kỳ.",
+    "filter": {
+      "category": "financial"
+    },
+    "filter_context": "Input giả định: người dùng chọn phạm vi category=financial trước khi truy xuất; không suy ra filter từ gold."
+  },
+  {
+    "id": "Q19",
+    "split": "test",
+    "topic": "graduation",
+    "question_type": "scope",
+    "question": "Về đối tượng sinh viên, quy trình xét tốt nghiệp này áp dụng cho bậc và hình thức đào tạo nào, và sinh viên phải đạt tình trạng gì?",
+    "expected_answer": "Sinh viên hệ chính quy bậc đại học đã hoàn thành chương trình đào tạo và đủ điều kiện xét tốt nghiệp.",
+    "gold_source_id": "vinuni_graduation",
+    "gold_page": 2,
+    "evidence_quote": "2.1 Đối tượng áp dụng: Sinh viên có hình thức đào tạo hệ chính quy bậc Đại học đã hoàn thành chương trình đào tạo và đủ điều kiện xét tốt nghiệp;",
+    "filter": {},
+    "filter_context": "Không có yêu cầu lọc; C truy xuất không filter như B."
+  },
+  {
+    "id": "Q20",
+    "split": "test",
+    "topic": "graduation",
+    "question_type": "multi_condition",
+    "question": "Khi có nhu cầu nhận giấy chứng nhận tốt nghiệp tạm thời, sinh viên phải đăng ký với đơn vị nào và thời hạn cấp theo bảng là bao lâu kể từ quyết định công nhận tốt nghiệp và cấp bằng?",
+    "expected_answer": "Đăng ký với Phòng Quản lý Đào tạo (P.QLĐT); thời hạn theo bảng là 07 ngày sau khi có quyết định công nhận tốt nghiệp và cấp bằng.",
+    "gold_source_id": "vinuni_graduation",
+    "gold_page": 7,
+    "evidence_quote": "13 Cấp giấy chứng nhận tốt nghiệp tạm thời cho sinh viên theo quy định. Sinh viên đăng ký nhận giấy chứng nhận tốt nghiệp tạm thời khi có nhu cầu. P.QLĐT 07 ngày sau khi có QĐ công nhận tốt nghiệp và cấp bằng",
+    "filter": {},
+    "filter_context": "Không có yêu cầu lọc; C truy xuất không filter như B."
+  }
+]

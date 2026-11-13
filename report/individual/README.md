@@ -1,3 +1,3 @@
 # Báo cáo cá nhân
 
-Copy `MSSV_HoTen.md` thành `<MSSV>_<HoTen>.md`, điền kết quả thực tế và liên kết đến trace, nhãn audit cùng cấu hình. Không ghi giá trị ví dụ thành kết quả đã chạy.
+Bài đã điền: [2A202603668_HoQuocToan.md](2A202603668_HoQuocToan.md). Mẫu gốc tại [REPORT_TEMPLATE.md](../../REPORT_TEMPLATE.md). Báo cáo dẫn tới trace, nhãn audit và cấu hình thực; thông tin quyền dữ liệu/commit/nộp chưa có xác nhận được ghi rõ.
