@@ -25,7 +25,7 @@ pypdf đọc text, Unicode NFC, CRLF/CR về LF, NBSP/dấu cách ngang/dòng tr
 
 ## 2. Model, store, metadata và cách chạy
 
-Embedding: intfloat/multilingual-e5-small, revision **614241f622f53c4eeff9890bdc4f31cfecc418b3**, SentenceTransformers local CPU, vector **384** chiều, normalize_embeddings=True. Document thêm `passage: `, query thêm `query: `. Kiểm tra token để không âm thầm truncate. Dùng chung model/revision/corpus cho A/B/C.
+Embedding: intfloat/multilingual-e5-small, SentenceTransformers local CPU, vector **384** chiều, normalize_embeddings=True. Document thêm `passage: `, query thêm `query: `. Kiểm tra token để không âm thầm truncate. Dùng chung model/revision/corpus cho A/B/C.
 
 Version quan sát: SentenceTransformers 6.3.0, torch 2.11.0+cpu, transformers 5.22.2, pypdf 6.21.4, psycopg 3.3.8. PostgreSQL **16.16**, pgvector **0.8.7**, Docker image `pgvector/pgvector:0.8.7-pg16`, cổng 127.0.0.1:55433, DB day6_lab. Bảng rag_chunks lưu bền vững trong Docker volume; PK(strategy,chunk_id); exact cosine `<=>`, không HNSW/IVFFlat. A=273, B=350 dòng/ID phân biệt; C dùng B.
 
